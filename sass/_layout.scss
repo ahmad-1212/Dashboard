@@ -1,0 +1,129 @@
+.container {
+  position: relative;
+  overflow-x: clip;
+}
+
+.sidebar {
+  &.active {
+    width: 8rem;
+  }
+  width: 30rem;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, $color-primary, $color-primary-2);
+  overflow-x: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+  transition: all 0.3s ease-out;
+
+  @media only screen and (max-width: $bp-large) {
+    left: -100%;
+
+    &.active {
+      width: 30rem;
+      left: 0;
+    }
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    &.active {
+      left: 0;
+      z-index: 4;
+    }
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    &.active {
+      width: 100%;
+      left: 0;
+    }
+  }
+}
+
+.main {
+  position: absolute;
+  top: 0;
+  width: calc(100% - 30rem);
+  left: 30rem;
+  height: 100vh;
+  padding: 1rem 1.6rem 0 2rem;
+  background-color: #fff;
+  transition: all 0.3s;
+  margin-bottom: 5rem;
+
+  &.active {
+    width: calc(100% - 8rem);
+    left: 8rem;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    left: 0;
+    width: 100%;
+    &.active {
+      left: 30rem;
+    }
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    &.active .menu-icon {
+      position: fixed;
+      right: 3rem;
+      left: initial;
+      z-index: 100;
+    }
+  }
+}
+
+.header {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.card-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+  gap: 4rem;
+  margin-bottom: 5rem;
+}
+
+.graph-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  margin-bottom: 5rem;
+
+  @media only screen and (max-width: $bp-large) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.content-section {
+  display: grid;
+  grid-template-columns: minmax(24rem, 2fr) minmax(24rem, 1fr);
+  column-gap: 4rem;
+
+  @media only screen and (max-width: $bp-large) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.orders {
+  box-shadow: $shadow;
+  padding: 2rem;
+  border-radius: 5px;
+  min-height: 50rem;
+  margin-bottom: 5rem;
+  overflow-x: auto;
+}
+
+.customers {
+  box-shadow: $shadow;
+  padding: 2rem;
+  border-radius: 5px;
+  margin-bottom: 5rem;
+}

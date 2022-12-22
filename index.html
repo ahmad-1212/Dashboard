@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Dashboard | Admin Simple Dashboard Design</title>
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <nav class="side-nav">
+          <ul class="side-nav__list">
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-appleinc"></use>
+                </svg>
+                <span>brand name</span>
+              </a>
+            </li>
+
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-home"></use>
+                </svg>
+                <span>Dashboard</span>
+              </a>
+            </li>
+
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-group"></use>
+                </svg>
+                <span>coustomers</span>
+              </a>
+            </li>
+
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-message"></use>
+                </svg>
+                <span>message</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-help-with-circle"></use>
+                </svg>
+                <span>help</span>
+              </a>
+            </li>
+
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-settings"></use>
+                </svg>
+                <span>settings</span>
+              </a>
+            </li>
+
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-key"></use>
+                </svg>
+                <span>password</span>
+              </a>
+            </li>
+
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-logout"></use>
+                </svg>
+                <span>signout</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="main">
+        <header class="header">
+          <div class="menu-icon">
+            <svg>
+              <use xlink:href="img/sprite.svg#icon-menu"></use>
+            </svg>
+          </div>
+          <form action="" class="form">
+            <input type="text" placeholder="Search here" class="form__input" />
+            <button class="form__btn">
+              <svg class="form__icon">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </button>
+          </form>
+          <div class="user">
+            <img src="img/user-1.jpg" alt="User Image" class="user__img" />
+          </div>
+        </header>
+
+        <section class="card-section">
+          <div class="card">
+            <div class="card__text">
+              <h2 class="card__value">1,200</h2>
+              <label for="" class="card__label">Daily views</label>
+            </div>
+            <svg class="card__icon">
+              <use xlink:href="img/sprite.svg#icon-remove_red_eye"></use>
+            </svg>
+          </div>
+
+          <div class="card">
+            <div class="card__text">
+              <h2 class="card__value">400</h2>
+              <label for="" class="card__label">Sales</label>
+            </div>
+            <svg class="card__icon">
+              <use xlink:href="img/sprite.svg#icon-local_grocery_store"></use>
+            </svg>
+          </div>
+          <div class="card">
+            <div class="card__text">
+              <h2 class="card__value">300</h2>
+              <label for="" class="card__label">Comments</label>
+            </div>
+            <svg class="card__icon">
+              <use xlink:href="img/sprite.svg#icon-chat"></use>
+            </svg>
+          </div>
+
+          <div class="card">
+            <div class="card__text">
+              <h2 class="card__value">&dollar; 8,000</h2>
+              <label for="" class="card__label">Earning</label>
+            </div>
+            <svg class="card__icon">
+              <use xlink:href="img/sprite.svg#icon-attach_money"></use>
+            </svg>
+          </div>
+        </section>
+
+        <section class="graph-section">
+          <div class="chart-box">
+            <canvas id="myChart"></canvas>
+          </div>
+          <div class="chart-box">
+            <canvas id="earning"></canvas>
+          </div>
+        </section>
+
+        <section class="content-section">
+          <div class="orders">
+            <div class="table-header">
+              <h2 class="heading-primary">Resent Orders</h2>
+              <button class="table-header__btn">View All</button>
+            </div>
+
+            <table class="table">
+              <thead>
+                <tr>
+                  <td>Name</td>
+                  <td>Price</td>
+                  <td>Payment</td>
+                  <td>Status</td>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Laptops</td>
+                  <td>$1200</td>
+                  <td>Paid</td>
+                  <td>Delivered</td>
+                </tr>
+                <tr>
+                  <td>Speaker</td>
+                  <td>$500</td>
+                  <td>Paid</td>
+                  <td>Return</td>
+                </tr>
+                <tr>
+                  <td>Apple Watch</td>
+                  <td>$200</td>
+                  <td>Due</td>
+                  <td>In Progress</td>
+                </tr>
+                <tr>
+                  <td>Addidas Shorts</td>
+                  <td>$500</td>
+                  <td>Due</td>
+                  <td>Pending</td>
+                </tr>
+                <tr>
+                  <td>Wall Fans</td>
+                  <td>$130</td>
+                  <td>Due</td>
+                  <td>In Progress</td>
+                </tr>
+                <tr>
+                  <td>Window Coolers</td>
+                  <td>$1000</td>
+                  <td>Paid</td>
+                  <td>Delivered</td>
+                </tr>
+                <tr>
+                  <td>Casual Shoes</td>
+                  <td>$150</td>
+                  <td>Due</td>
+                  <td>Pending</td>
+                </tr>
+                <tr>
+                  <td>Addidas Shorts</td>
+                  <td>$500</td>
+                  <td>Due</td>
+                  <td>Pending</td>
+                </tr>
+                <tr>
+                  <td>Wall Fans</td>
+                  <td>$130</td>
+                  <td>Due</td>
+                  <td>In Progress</td>
+                </tr>
+                <tr>
+                  <td>Window Coolers</td>
+                  <td>$1000</td>
+                  <td>Paid</td>
+                  <td>Delivered</td>
+                </tr>
+                <tr>
+                  <td>Casual Shoes</td>
+                  <td>$150</td>
+                  <td>Due</td>
+                  <td>Pending</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="customers">
+            <div class="customers-title">
+              <h2 class="heading-primary">Recent Customers</h2>
+            </div>
+
+            <ul class="customer-list">
+              <li class="customer-list__item">
+                <div class="customer-list__image">
+                  <img src="img/user-2.jpg" alt="User-image" />
+                </div>
+                <div class="customer__info">
+                  <h3 class="heading-secondary">Stephenie</h3>
+                  <p class="customer-list__country">Canada</p>
+                </div>
+              </li>
+
+              <li class="customer-list__item">
+                <div class="customer-list__image">
+                  <img src="img/user-3.jpg" alt="User-image" />
+                </div>
+                <div class="customer__info">
+                  <h3 class="heading-secondary">Smith</h3>
+                  <p class="customer-list__country">Belgium</p>
+                </div>
+              </li>
+
+              <li class="customer-list__item">
+                <div class="customer-list__image">
+                  <img src="img/user-4.jpg" alt="User-image" />
+                </div>
+                <div class="customer__info">
+                  <h3 class="heading-secondary">Jonas Burg</h3>
+                  <p class="customer-list__country">UAE</p>
+                </div>
+              </li>
+
+              <li class="customer-list__item">
+                <div class="customer-list__image">
+                  <img src="img/user-2.jpg" alt="User-image" />
+                </div>
+                <div class="customer__info">
+                  <h3 class="heading-secondary">Stephenie</h3>
+                  <p class="customer-list__country">Canada</p>
+                </div>
+              </li>
+
+              <li class="customer-list__item">
+                <div class="customer-list__image">
+                  <img src="img/user-3.jpg" alt="User-image" />
+                </div>
+                <div class="customer__info">
+                  <h3 class="heading-secondary">David</h3>
+                  <p class="customer-list__country">USA</p>
+                </div>
+              </li>
+
+              <li class="customer-list__item">
+                <div class="customer-list__image">
+                  <img src="img/user-2.jpg" alt="User-image" />
+                </div>
+                <div class="customer__info">
+                  <h3 class="heading-secondary">Stephenie</h3>
+                  <p class="customer-list__country">Canada</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+    <!-- 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.1/chart.js"
+      integrity="sha512-64PuQoA1/rGxeXwhWJRNZl25TjBPhQWeQ6x8h6UC54gQT7xFvTio//dLKg2MiAc3/4Tf+uoLKPzl+QuX87fssA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script type="module" src="js/script.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
