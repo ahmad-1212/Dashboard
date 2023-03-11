@@ -1,2 +1,2 @@
 # Dashboard
-Simple Admin Dashboard design using Html and Sass
+Simple Admin Dashboard design using Html, Saas and JavaScript
